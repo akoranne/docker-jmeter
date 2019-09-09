@@ -140,7 +140,4 @@ docker run --name ${NAME} -i -v ${WORK_DIR}:${WORK_DIR} -w ${WORK_DIR} ${IMAGE} 
 
 ## Credits
 
-Thank you to
-
-* https://github.com/justb4/docker-jmeter
-for allowing me to fork your repo and get very valuable content.
+Thank you to https://github.com/justb4/docker-jmeter for allowing me to fork your repo and get very valuable content.
