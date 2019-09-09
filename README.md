@@ -138,6 +138,22 @@ to the Docker container, see [run.sh](run.sh) script:
 docker run --name ${NAME} -i -v ${WORK_DIR}:${WORK_DIR} -w ${WORK_DIR} ${IMAGE} $@
 ```
 
+## X11 Error on Mac
+If you are running on Mac, you will see following error
+```
+An error occurred:
+No X11 DISPLAY variable was set, but this program performed an operation which requires it.
+```
+
+If you want to fix it on Mac, you need to do few things:
+
+* Install the latest XQuartz X11 server and run it
+* Activate the option ‘Allow connections from network clients’ in XQuartz settings
+* Quit & restart XQuartz (to activate the setting)
+* Run the docker script
+
 ## Credits
 
 Thank you to https://github.com/justb4/docker-jmeter for allowing me to fork your repo and get very valuable content.
+
+* https://medium.com/@mreichelt/how-to-show-x11-windows-within-docker-on-mac-50759f4b65cb
