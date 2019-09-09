@@ -1,3 +1,5 @@
 docker-remove-all.sh
 .DS_Store
+**/jmeter.log
+**/tests/trivial/report
 **/report/
